@@ -13,6 +13,7 @@ import {
   Phone,
   Play,
   X,
+  type LucideIcon,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -84,6 +85,13 @@ const navLinks = [
   ["Location", "#location"],
   ["Contact", "#contact"],
 ] as const;
+
+const quickInfo: Array<{ icon: LucideIcon; label: string; value: string; href: string }> = [
+  { icon: MapPin, label: "Location", value: "Near University of Ilesa", href: "#location" },
+  { icon: Building2, label: "Accommodation", value: "Student Accommodation", href: "#accommodation" },
+  { icon: Phone, label: "Phone", value: siteConfig.phoneDisplay, href: siteConfig.phoneHref },
+  { icon: Mail, label: "Email", value: siteConfig.email, href: `mailto:${siteConfig.email}` },
+];
 
 function Wordmark({ inverse = false }: { inverse?: boolean }) {
   return (
@@ -191,15 +199,10 @@ function HomePage() {
 
         <section aria-label="Quick information" className="bg-background">
           <div className="mx-auto grid max-w-7xl divide-y divide-border px-5 py-4 sm:grid-cols-2 sm:divide-x sm:divide-y-0 sm:px-8 lg:grid-cols-4 lg:px-12">
-            {[
-              [MapPin, "Location", "Near University of Ilesa", "#location"],
-              [Building2, "Accommodation", "Student Accommodation", "#accommodation"],
-              [Phone, "Phone", siteConfig.phoneDisplay, siteConfig.phoneHref],
-              [Mail, "Email", siteConfig.email, `mailto:${siteConfig.email}`],
-            ].map(([Icon, label, value, href]) => (
-              <a key={label as string} href={href as string} className="flex min-w-0 items-center gap-4 px-2 py-5 sm:px-6">
+            {quickInfo.map(({ icon: Icon, label, value, href }) => (
+              <a key={label} href={href} className="flex min-w-0 items-center gap-4 px-2 py-5 sm:px-6">
                 <Icon className="size-5 shrink-0 text-accent" />
-                <span className="min-w-0"><span className="block text-xs font-semibold text-muted-foreground">{label as string}</span><span className="block truncate text-sm font-semibold">{value as string}</span></span>
+                <span className="min-w-0"><span className="block text-xs font-semibold text-muted-foreground">{label}</span><span className="block truncate text-sm font-semibold">{value}</span></span>
               </a>
             ))}
           </div>
@@ -337,11 +340,11 @@ function HomePage() {
         <Button asChild size="lg" variant="gold"><a href={siteConfig.whatsappHref} target="_blank" rel="noreferrer"><MessageCircle />WhatsApp</a></Button>
       </div>
 
-      {activeImage !== null ? (
+      {activeImage !== null && gallery[activeImage] ? (
         <div className="fixed inset-0 z-50 grid place-items-center bg-primary/95 p-4" role="dialog" aria-modal="true" aria-label="Photo viewer" onClick={() => setActiveImage(null)}>
           <Button variant="light" size="icon" className="absolute right-4 top-4" onClick={() => setActiveImage(null)} aria-label="Close photo"><X /></Button>
           <Button variant="light" size="icon" className="absolute left-4 top-1/2 -translate-y-1/2" onClick={(event) => { event.stopPropagation(); setActiveImage((activeImage - 1 + gallery.length) % gallery.length); }} aria-label="Previous photo"><ChevronLeft /></Button>
-          <img src={gallery[activeImage].src} alt={gallery[activeImage].alt} className="max-h-[85vh] max-w-[88vw] rounded-[16px] object-contain" onClick={(event) => event.stopPropagation()} />
+          <img src={gallery[activeImage]?.src} alt={gallery[activeImage]?.alt} className="max-h-[85vh] max-w-[88vw] rounded-[16px] object-contain" onClick={(event) => event.stopPropagation()} />
           <Button variant="light" size="icon" className="absolute right-4 top-1/2 -translate-y-1/2" onClick={(event) => { event.stopPropagation(); setActiveImage((activeImage + 1) % gallery.length); }} aria-label="Next photo"><ChevronRight /></Button>
         </div>
       ) : null}
