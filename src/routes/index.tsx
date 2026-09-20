@@ -386,14 +386,14 @@ useEffect(() => {
         </section>
 
         <section className="bg-primary py-20 text-primary-foreground sm:py-28">
-  <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-   <SectionHeading
-  eyebrow="Quality & Features"
-  title="Designed for Comfortable Student Living"
-  copy="Achievers Dorms provides practical accommodation spaces with features designed around everyday student living."
-  className="text-primary-foreground"
-/>
-
+  
+   <div className="[&_h2]:!text-white [&_p]:!text-white [&_p]:!text-white/80">
+  <SectionHeading
+    eyebrow="Quality & Features"
+    title="Designed for Comfortable Student Living"
+    copy="Achievers Dorms provides practical accommodation spaces with features designed around everyday student living."
+  />
+</div>
     <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {[
         ["01", "Accommodation Rooms", "Comfortable accommodation spaces for student living."],
