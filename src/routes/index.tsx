@@ -18,13 +18,13 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
-import bathroom from "@/assets/achievers-dorms-bathroom.jpeg.asset.json";
-import counter from "@/assets/achievers-dorms-counter.jpeg.asset.json";
-import kitchenetteStorage from "@/assets/achievers-dorms-kitchenette-storage.jpeg.asset.json";
-import kitchenette from "@/assets/achievers-dorms-kitchenette.jpeg.asset.json";
-import roomFloor from "@/assets/achievers-dorms-room-floor.jpeg.asset.json";
-import roomWardrobe from "@/assets/achievers-dorms-room-wardrobe.jpeg.asset.json";
-import room from "@/assets/achievers-dorms-room.jpeg.asset.json";
+// import bathroom from "@/assets/achievers-dorms-bathroom.jpeg.asset.json";
+// import counter from "@/assets/achievers-dorms-counter.jpeg.asset.json";
+// import kitchenetteStorage from "@/assets/achievers-dorms-kitchenette-storage.jpeg.asset.json";
+// import kitchenette from "@/assets/achievers-dorms-kitchenette.jpeg.asset.json";
+// import roomFloor from "@/assets/achievers-dorms-room-floor.jpeg.asset.json";
+// import roomWardrobe from "@/assets/achievers-dorms-room-wardrobe.jpeg.asset.json";
+// import room from "@/assets/achievers-dorms-room.jpeg.asset.json";
 
 const description =
   "Achievers Dorms offers student accommodation near the University of Ilesa in Ilesa, Osun State. Explore our hostel, location and contact information.";
@@ -67,14 +67,49 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const gallery = [
-  { src: room.url, alt: "Room at Achievers Dorms with a wardrobe beside two windows" },
-  { src: kitchenette.url, alt: "Kitchenette counter and sink inside Achievers Dorms" },
-  { src: bathroom.url, alt: "Bathroom with toilet and wash basin at Achievers Dorms" },
-  { src: counter.url, alt: "Built-in counter and storage area at Achievers Dorms" },
-  { src: roomWardrobe.url, alt: "Accommodation room with wardrobe and natural light" },
-  { src: roomFloor.url, alt: "Tiled room floor and window inside Achievers Dorms" },
-  { src: kitchenetteStorage.url, alt: "Open storage beneath a kitchenette counter" },
+
+ const gallery = [
+  {
+    src: "/images/major-room.jpeg",
+    alt: "Main accommodation room at Achievers Dorms",
+  },
+  {
+    src: "/images/kitchen.jpeg",
+    alt: "Kitchen area at Achievers Dorms",
+  },
+  {
+    src: "/images/bathroom.jpeg",
+    alt: "Bathroom at Achievers Dorms",
+  },
+  {
+    src: "/images/kitchen-cabinet.jpeg",
+    alt: "Kitchen cabinet and storage area at Achievers Dorms",
+  },
+  {
+    src: "/images/room-big.jpeg",
+    alt: "Spacious accommodation room at Achievers Dorms",
+  },
+  {
+    src: "/images/window.jpeg",
+    alt: "Window and natural light inside Achievers Dorms",
+  },
+  {
+    src: "/images/kitchen-another-view.jpeg",
+    alt: "Another view of the kitchen area at Achievers Dorms",
+  },
+  {
+    src: "/images/compound.jpeg",
+    alt: "Exterior compound of Achievers Dorms",
+  },
+  {
+    src: "/images/bathroom-side.jpeg",
+    alt: "Side view of the bathroom at Achievers Dorms",
+  },
+  {
+    src: "/images/toilet.jpeg",
+    alt: "Toilet area at Achievers Dorms",
+  },
+
 ];
 
 const navLinks = [
@@ -176,7 +211,13 @@ function HomePage() {
 
       <main>
         <section id="home" className="relative isolate min-h-[760px] overflow-hidden pt-20 sm:min-h-[820px]">
-          <img src={room.url} alt="Achievers Dorms room with wardrobe and windows" className="absolute inset-0 -z-20 h-full w-full object-cover" fetchPriority="high" />
+          {/* <img src={room.url} alt="Achievers Dorms room with wardrobe and windows" className="absolute inset-0 -z-20 h-full w-full object-cover" fetchPriority="high" /> */}
+          <img
+  src="/images/major-room.jpeg"
+  alt="Main accommodation room at Achievers Dorms"
+  className="absolute inset-0 -z-20 h-full w-full object-cover"
+  fetchPriority="high"
+/>
           <div className="absolute inset-0 -z-10 bg-primary/75" />
           <div className="mx-auto flex min-h-[680px] max-w-7xl items-center px-5 py-20 sm:min-h-[740px] sm:px-8 lg:px-12">
             <div className="max-w-4xl">
@@ -223,7 +264,15 @@ function HomePage() {
         <section id="accommodation" className="py-20 sm:py-28">
           <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:px-12">
             <div className="relative">
-              <img src={kitchenette.url} alt="Kitchenette counter and sink inside Achievers Dorms" loading="lazy" width="1000" height="750" className="aspect-[4/3] w-full rounded-[24px] object-cover" />
+              {<img
+  src="/images/kitchen.jpeg"
+  alt="Kitchen area at Achievers Dorms"
+  loading="lazy"
+  width="1000"
+  height="750"
+  className="aspect-[4/3] w-full rounded-[24px] object-cover"
+/>
+              /* <img src={kitchenette.url} alt="Kitchenette counter and sink inside Achievers Dorms" loading="lazy" width="1000" height="750" className="aspect-[4/3] w-full rounded-[24px] object-cover" /> */ }
               <div className="absolute -bottom-5 -right-3 rounded-[16px] bg-primary p-5 text-primary-foreground shadow-xl sm:right-5">
                 <p className="font-display text-2xl font-bold">Ilesa</p><p className="text-sm text-primary-foreground/70">Osun State, Nigeria</p>
               </div>
