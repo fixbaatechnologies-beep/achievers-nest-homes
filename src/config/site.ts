@@ -6,5 +6,5 @@ export const siteConfig = {
   email: "achievershostels@gmail.com",
   location: "Near University of Ilesa, Ilesa, Osun State, Nigeria",
   // Add the client's YouTube watch or share URL when it is available.
-  youtubeUrl: "",
+  youtubeUrl: "https://www.youtube.com/embed/DTIJAgUOHV0",
 } as const;
