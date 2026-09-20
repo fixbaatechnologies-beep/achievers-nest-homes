@@ -416,6 +416,7 @@ useEffect(() => {
       ))}
     </div>
   </div>
+  
 </section>
 
         <section id="contact" className="py-20 sm:py-28">
