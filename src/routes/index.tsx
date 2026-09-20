@@ -380,18 +380,19 @@ useEffect(() => {
               <MapPin className="size-8 text-accent" />
               <h3 className="mt-8 text-2xl font-bold">Achievers Dorms</h3>
               <p className="mt-3 max-w-md leading-7 text-muted-foreground">{siteConfig.location}</p>
-              <div className="mt-8 flex items-center gap-3 border-t border-border pt-6 text-sm font-medium"><Check className="size-5 text-accent" /> Exact map location will be added when confirmed.</div>
+              <div className="mt-8 flex items-center gap-3 border-t border-border pt-6 text-sm font-medium"><Check className="size-5 text-accent" /> Located in the Abanise area, approximately 300 metres from the University of Ilesa main gate.</div>
             </div>
           </div>
         </section>
 
         <section className="bg-primary py-20 text-primary-foreground sm:py-28">
   <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-    <SectionHeading
-      eyebrow="Quality & Features"
-      title="Designed for Comfortable Student Living"
-      copy="Achievers Dorms provides practical accommodation spaces with features designed around everyday student living."
-    />
+   <SectionHeading
+  eyebrow="Quality & Features"
+  title="Designed for Comfortable Student Living"
+  copy="Achievers Dorms provides practical accommodation spaces with features designed around everyday student living."
+  className="text-primary-foreground"
+/>
 
     <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {[
