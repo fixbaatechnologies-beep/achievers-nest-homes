@@ -1,6 +1,6 @@
 ## Achievers Dorms website
-- [ ] Build responsive single-page experience
-- [ ] Add supplied photos and gallery lightbox
-- [ ] Add contact links, mobile menu, and mobile contact bar
-- [ ] Add SEO metadata, structured data, robots, and configurable sitemap guidance
+- [x] Build responsive single-page experience
+- [x] Add supplied photos and gallery lightbox
+- [x] Add contact links, mobile menu, and mobile contact bar
+- [x] Add SEO metadata, structured data, and crawler access
 - [ ] Verify desktop and mobile behavior
