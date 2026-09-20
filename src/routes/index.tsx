@@ -155,8 +155,8 @@ function SectionHeading({ eyebrow, title, copy }: { eyebrow: string; title: stri
 
 function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeImage, setActiveImage] = useState<number | null>(null);
-
+const [activeImage, setActiveImage] = useState<number | null>(null);
+const [showBookingPopup, setShowBookingPopup] = useState(false);
   useEffect(() => {
     if (activeImage === null) return;
     const onKeyDown = (event: KeyboardEvent) => {
@@ -171,7 +171,13 @@ function HomePage() {
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [activeImage]);
+useEffect(() => {
+  const timer = window.setTimeout(() => {
+    setShowBookingPopup(true);
+  }, 5000);
 
+  return () => window.clearTimeout(timer);
+}, []);
   return (
     <div className="bg-background pb-16 text-foreground md:pb-0">
       <header className="fixed inset-x-0 top-0 z-40 border-b border-border/70 bg-background/95 backdrop-blur-md">
@@ -316,7 +322,37 @@ function HomePage() {
             </div>
           </div>
         </section>
+<div className="mt-10 rounded-[24px] border border-border bg-card p-6 sm:p-8">
+  <div className="flex items-start gap-4">
+    <MapPin className="mt-1 size-6 shrink-0 text-accent" />
 
+    <div>
+      <h3 className="font-display text-2xl font-bold text-foreground">
+        Directions from the University of Ilesa Main Gate
+      </h3>
+
+      <p className="mt-4 leading-7 text-muted-foreground">
+        From the University of Ilesa main gate, go straight from the gate.
+        At the point where the road divides, take the left direction towards
+        Abanise. Continue straight towards the Golf Club and look out for the
+        Golf Club signpost on your right.
+      </p>
+
+      <p className="mt-4 leading-7 text-muted-foreground">
+        Continue until you reach the junction where the transformer is
+        located. At the transformer, turn right into the street and continue
+        approximately 20 metres. The twin buildings ahead are Achievers
+        Dorms.
+      </p>
+
+      <div className="mt-6 rounded-[16px] bg-muted p-4">
+        <p className="font-semibold text-foreground">
+          Approximately 300 metres from the University of Ilesa main gate.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
         <section className="bg-primary py-20 text-primary-foreground sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <p className="text-xs font-bold uppercase text-accent">Good to know</p>
@@ -348,6 +384,38 @@ function HomePage() {
             </div>
           </div>
         </section>
+
+        <section className="bg-primary py-20 text-primary-foreground sm:py-28">
+  <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+    <SectionHeading
+      eyebrow="Quality & Features"
+      title="Designed for Comfortable Student Living"
+      copy="Achievers Dorms provides practical accommodation spaces with features designed around everyday student living."
+    />
+
+    <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {[
+        ["01", "Accommodation Rooms", "Comfortable accommodation spaces for student living."],
+        ["02", "Kitchen Areas", "Dedicated kitchen areas with practical storage and cabinet spaces."],
+        ["03", "Wardrobes", "Wardrobe spaces provided within the accommodation rooms."],
+        ["04", "Private Bathrooms", "Dedicated bathroom spaces within the accommodation."],
+        ["05", "Electrical Points", "Electrical sockets and fittings provided within the rooms."],
+        ["06", "Lighting Points", "Lighting points provided throughout the accommodation spaces."],
+      ].map(([number, title, copy]) => (
+        <article
+          key={title}
+          className="rounded-[20px] border border-primary-foreground/10 bg-primary-foreground/5 p-7"
+        >
+          <span className="text-sm font-bold text-accent">{number}</span>
+          <h3 className="mt-5 text-xl font-bold">{title}</h3>
+          <p className="mt-3 leading-7 text-primary-foreground/65">
+            {copy}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
 
         <section id="contact" className="py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
@@ -388,6 +456,65 @@ function HomePage() {
         <Button asChild size="lg"><a href={siteConfig.phoneHref}><Phone />Call</a></Button>
         <Button asChild size="lg" variant="gold"><a href={siteConfig.whatsappHref} target="_blank" rel="noreferrer"><MessageCircle />WhatsApp</a></Button>
       </div>
+
+      {showBookingPopup ? (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary/50 p-5">
+    <div
+      className="relative w-full max-w-md rounded-[24px] bg-background p-7 shadow-2xl sm:p-8"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="booking-popup-title"
+    >
+      <button
+        type="button"
+        onClick={() => setShowBookingPopup(false)}
+        className="absolute right-4 top-4 grid size-9 place-items-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+        aria-label="Close booking popup"
+      >
+        <X className="size-5" />
+      </button>
+
+      <p className="text-xs font-bold uppercase text-accent">
+        Achievers Dorms
+      </p>
+
+      <h2
+        id="booking-popup-title"
+        className="mt-3 font-display text-2xl font-bold text-foreground sm:text-3xl"
+      >
+        Looking for accommodation near the University of Ilesa?
+      </h2>
+
+      <p className="mt-4 leading-7 text-muted-foreground">
+        Call us to book your room.
+      </p>
+
+      <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+        <Button asChild size="lg" variant="gold" className="flex-1">
+          <a href={siteConfig.phoneHref}>
+            <Phone />
+            Call Now
+          </a>
+        </Button>
+
+        <Button asChild size="lg" variant="outline" className="flex-1">
+          <a
+            href={siteConfig.whatsappHref}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <MessageCircle />
+            WhatsApp
+          </a>
+        </Button>
+      </div>
+
+      <p className="mt-4 text-center text-sm font-semibold text-muted-foreground">
+        {siteConfig.phoneDisplay}
+      </p>
+    </div>
+  </div>
+) : null}
 
       {activeImage !== null && gallery[activeImage] ? (
         <div className="fixed inset-0 z-50 grid place-items-center bg-primary/95 p-4" role="dialog" aria-modal="true" aria-label="Photo viewer" onClick={() => setActiveImage(null)}>
