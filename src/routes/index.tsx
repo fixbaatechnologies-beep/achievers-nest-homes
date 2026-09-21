@@ -1,3 +1,6 @@
+Here is your complete, updated code. All layout, styling, and functionality remain exactly the same, but the text has been carefully cleaned up to reflect "Achievers Homes", ensure the location consistently reads "Opposite University of Ilesa", and fix the duplicated headline wording as requested.
+
+```tsx
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
@@ -27,16 +30,16 @@ import { siteConfig } from "@/config/site";
 // import room from "@/assets/achievers-dorms-room.jpeg.asset.json";
 
 const description =
-  "Achievers Homes offers The Most Comfortable Student Home, Opposite University of Ilesa opposite the University of Ilesa in Ilesa, Osun State. Explore our hostel, location and contact information.";
+  "Achievers Homes offers the most comfortable student accommodation opposite University of Ilesa in Ilesa, Osun State. Explore our hostel, location and contact information.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Achievers Homes | The Most Comfortable Student Home, Opposite University of Ilesa Opposite University of Ilesa" },
+      { title: "Achievers Homes | The Most Comfortable Student Accommodation Opposite University of Ilesa" },
       { name: "description", content: description },
       {
         property: "og:title",
-        content: "Achievers Homes | The Most Comfortable Student Home, Opposite University of Ilesa Opposite University of Ilesa",
+        content: "Achievers Homes | The Most Comfortable Student Accommodation Opposite University of Ilesa",
       },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
@@ -123,7 +126,7 @@ const navLinks = [
 
 const quickInfo: Array<{ icon: LucideIcon; label: string; value: string; href: string }> = [
   { icon: MapPin, label: "Location", value: "Opposite University of Ilesa", href: "#location" },
-  { icon: Building2, label: "Accommodation", value: "The Most Comfortable Student Home, Opposite University of Ilesa", href: "#accommodation" },
+  { icon: Building2, label: "Accommodation", value: "The Most Comfortable Student Accommodation Opposite University of Ilesa", href: "#accommodation" },
   { icon: Phone, label: "Phone", value: siteConfig.phoneDisplay, href: siteConfig.phoneHref },
   { icon: Mail, label: "Email", value: siteConfig.email, href: `mailto:${siteConfig.email}` },
 ];
@@ -231,10 +234,10 @@ useEffect(() => {
                 <MapPin className="size-4 text-accent" /> Opposite University of Ilesa
               </p>
               <h1 className="max-w-4xl text-4xl font-extrabold leading-[1.08] text-hero-foreground sm:text-6xl lg:text-7xl">
-                Comfortable The Most Comfortable Student Home, Opposite University of Ilesa Near the University of Ilesa
+                The Most Comfortable Student Accommodation Opposite University of Ilesa
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-7 text-hero-foreground/80 sm:text-lg">
-                Achievers Homes provides a convenient accommodation option for students looking for a comfortable place to stay near the University of Ilesa in Ilesa, Osun State.
+                Achievers Homes provides a convenient accommodation option for students looking for a comfortable place to stay opposite University of Ilesa in Ilesa, Osun State.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Button asChild size="lg" variant="gold"><a href={siteConfig.phoneHref}><Phone />Call Us</a></Button>
@@ -260,7 +263,7 @@ useEffect(() => {
             <SectionHeading eyebrow="About us" title="About Achievers Homes" />
             <div>
               <p className="text-xl leading-8 text-foreground sm:text-2xl sm:leading-9">
-                Achievers Homes provides The Most Comfortable Student Home, Opposite University of Ilesa near the University of Ilesa in Ilesa, Osun State. We aim to provide students with a convenient place to stay while pursuing their studies.
+                Achievers Homes provides the most comfortable student accommodation opposite University of Ilesa in Ilesa, Osun State. We aim to provide students with a convenient place to stay while pursuing their studies.
               </p>
               <div className="mt-7 h-1 w-16 rounded-full bg-accent" />
             </div>
@@ -284,7 +287,7 @@ useEffect(() => {
               </div>
             </div>
             <div>
-              <SectionHeading eyebrow="The accommodation" title="A Convenient Place to Stay" copy="Located near the University of Ilesa, Achievers Homes offers students a convenient accommodation option within easy reach of their academic environment. Explore our photos to get a better view of the accommodation and surroundings." />
+              <SectionHeading eyebrow="The accommodation" title="A Convenient Place to Stay" copy="Located opposite University of Ilesa, Achievers Homes offers comfortable student accommodation within easy reach of your academic environment. Explore our photos to get a better view of the accommodation and surroundings." />
               <Button asChild variant="outline" size="lg" className="mt-8"><a href="#gallery">View the gallery <ArrowRight /></a></Button>
             </div>
           </div>
@@ -308,7 +311,7 @@ useEffect(() => {
 
         <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-            <SectionHeading eyebrow="Directions" title="Watch this short guide to see how to get to Achievers Homes from the University of Ilesa main gate." copy="Watch this short guide to see how to get to Achievers Homes near the University of Ilesa." />
+            <SectionHeading eyebrow="Directions" title="Watch this short guide to see how to get to Achievers Homes from the University of Ilesa main gate." copy="Watch this short guide to see how to get to Achievers Homes opposite University of Ilesa." />
             <div className="mt-10 aspect-video overflow-hidden rounded-[24px] bg-primary">
               {siteConfig.youtubeUrl ? (
                 <iframe className="h-full w-full" src={siteConfig.youtubeUrl} title="How to get to Achievers Homes" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
@@ -336,7 +339,7 @@ useEffect(() => {
               </p>
 
               <p className="mt-4 leading-7 text-muted-foreground">
-                Continue until you reach the junction where the transformer is located. At the transformer, turn right into the street and continue approximately 20 metres. The twin buildings ahead are Achievers Dorms.
+                Continue until you reach the junction where the transformer is located. At the transformer, turn right into the street and continue approximately 20 metres. The twin buildings ahead are Achievers Homes.
               </p>
 
               <div className="mt-6 rounded-[16px] bg-muted p-4">
@@ -353,8 +356,8 @@ useEffect(() => {
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">Why Achievers Homes?</h2>
             <div className="mt-12 grid gap-px overflow-hidden rounded-[20px] bg-primary-foreground/15 md:grid-cols-3">
               {[
-                ["01", "Convenient Location", "Located near the University of Ilesa."],
-                ["02", "The Most Comfortable Student Home, Opposite University of Ilesa", "A place designed around the accommodation needs of students."],
+                ["01", "Convenient Location", "Located opposite University of Ilesa."],
+                ["02", "Comfortable Student Accommodation", "A place designed around the accommodation needs of students."],
                 ["03", "Easy to Contact", "Reach Achievers Homes directly by phone, WhatsApp or email."],
               ].map(([number, title, copy]) => (
                 <article key={title} className="bg-primary p-8 sm:p-10">
@@ -369,7 +372,7 @@ useEffect(() => {
 
         <section id="location" className="bg-card py-20 sm:py-28">
           <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-12">
-            <SectionHeading eyebrow="Location" title="Close to Your Academic Environment" copy="Achievers Homes is located near the University of Ilesa, making it a practical The Most Comfortable Student Home, Opposite University of Ilesa option in Ilesa, Osun State." />
+            <SectionHeading eyebrow="Location" title="Close to Your Academic Environment" copy="Achievers Homes is located opposite University of Ilesa, making it a highly practical and comfortable student accommodation option in Ilesa, Osun State." />
             <div className="rounded-[20px] border border-border bg-background p-8 sm:p-10">
               <MapPin className="size-8 text-accent" />
               <h3 className="mt-8 text-2xl font-bold">Achievers Homes</h3>
@@ -440,7 +443,7 @@ useEffect(() => {
       <footer className="bg-footer pb-24 pt-16 text-hero-foreground md:pb-10">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <div className="grid gap-12 border-b border-hero-foreground/15 pb-12 md:grid-cols-[1.3fr_0.7fr_1fr]">
-            <div><Wordmark inverse /><p className="mt-5 max-w-sm leading-7 text-footer-muted">The Most Comfortable Student Home, Opposite University of Ilesa near the University of Ilesa, Ilesa, Osun State, Nigeria.</p></div>
+            <div><Wordmark inverse /><p className="mt-5 max-w-sm leading-7 text-footer-muted">The most comfortable student accommodation opposite University of Ilesa in Ilesa, Osun State, Nigeria.</p></div>
             <div><h3 className="text-sm font-bold">Navigate</h3><nav className="mt-5 grid gap-3 text-sm text-footer-muted">{navLinks.map(([label, href]) => <a key={href} href={href} className="hover:text-hero-foreground">{label}</a>)}</nav></div>
             <div><h3 className="text-sm font-bold">Contact</h3><div className="mt-5 grid gap-3 text-sm text-footer-muted"><a href={siteConfig.phoneHref}>{siteConfig.phoneDisplay}</a><a className="break-all" href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a><p>{siteConfig.location}</p></div></div>
           </div>
@@ -478,7 +481,7 @@ useEffect(() => {
         id="booking-popup-title"
         className="mt-3 font-display text-2xl font-bold text-foreground sm:text-3xl"
       >
-        Looking for accommodation near the University of Ilesa?
+        Looking for accommodation opposite University of Ilesa?
       </h2>
 
       <p className="mt-4 leading-7 text-muted-foreground">
@@ -523,3 +526,5 @@ useEffect(() => {
     </div>
   );
 }
+
+```
