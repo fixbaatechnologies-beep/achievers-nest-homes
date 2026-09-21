@@ -322,31 +322,31 @@ useEffect(() => {
             </div>
           </div>
         </section>
-<div className="mt-10 rounded-[24px] border border-border bg-card p-6 sm:p-8">
-  <div className="flex items-start gap-4">
-    <MapPin className="mt-1 size-6 shrink-0 text-accent" />
+        <div className="mt-10 rounded-[24px] border border-border bg-card p-6 sm:p-8">
+          <div className="flex items-start gap-4">
+            <MapPin className="mt-1 size-6 shrink-0 text-accent" />
 
-    <div>
-      <h3 className="font-display text-2xl font-bold text-foreground">
-        Directions from the University of Ilesa Main Gate
-      </h3>
+            <div>
+              <h3 className="font-display text-2xl font-bold text-foreground">
+                Directions from the University of Ilesa Main Gate
+              </h3>
 
-      <p className="mt-4 leading-7 text-muted-foreground">
-        From the University of Ilesa main gate, go straight from the gate. At the point where the road divides, take the left direction towards Ibodi/ Ile Ife. Continue straight towards Abanishe Area and look out for the Golf Club signpost on your right.
-      </p>
+              <p className="mt-4 leading-7 text-muted-foreground">
+                From the University of Ilesa main gate, go straight from the gate. At the point where the road divides, take the left direction towards Ibodi/ Ile Ife. Continue straight towards Abanishe Area and look out for the Golf Club signpost on your right.
+              </p>
 
-      <p className="mt-4 leading-7 text-muted-foreground">
-        Continue until you reach the junction where the transformer is located. At the transformer, turn right into the street and continue approximately 20 metres. The twin buildings ahead are Achievers Dorms.
-      </p>
+              <p className="mt-4 leading-7 text-muted-foreground">
+                Continue until you reach the junction where the transformer is located. At the transformer, turn right into the street and continue approximately 20 metres. The twin buildings ahead are Achievers Dorms.
+              </p>
 
-      <div className="mt-6 rounded-[16px] bg-muted p-4">
-        <p className="font-semibold text-foreground">
-          Approximately 300 metres from the University of Ilesa main gate.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+              <div className="mt-6 rounded-[16px] bg-muted p-4">
+                <p className="font-semibold text-foreground">
+                  Approximately 300 metres from the University of Ilesa main gate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <section className="bg-primary py-20 text-primary-foreground sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <p className="text-xs font-bold uppercase text-accent">Good to know</p>
@@ -379,7 +379,7 @@ useEffect(() => {
           </div>
         </section>
 
-      <section className="bg-primary py-20 text-primary-foreground sm:py-28">
+        <section className="bg-primary py-20 text-primary-foreground sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="[&_h2]:!text-white [&_p:first-of-type]:!text-white [&_p:last-of-type]:!text-white/80">
               <SectionHeading
@@ -412,7 +412,7 @@ useEffect(() => {
             </div>
           </div>
         </section>
-        
+
         <section id="contact" className="py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="rounded-[24px] bg-primary px-6 py-12 text-primary-foreground sm:px-12 sm:py-16 lg:px-16">
