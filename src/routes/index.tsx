@@ -27,16 +27,16 @@ import { siteConfig } from "@/config/site";
 // import room from "@/assets/achievers-dorms-room.jpeg.asset.json";
 
 const description =
-  "Achievers Dorms offers student accommodation near the University of Ilesa in Ilesa, Osun State. Explore our hostel, location and contact information.";
+  "Achievers Homes offers The Most Comfortable Student Home, Opposite University of Ilesa opposite the University of Ilesa in Ilesa, Osun State. Explore our hostel, location and contact information.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Achievers Dorms | Student Accommodation Near University of Ilesa" },
+      { title: "Achievers Homes | The Most Comfortable Student Home, Opposite University of Ilesa Opposite University of Ilesa" },
       { name: "description", content: description },
       {
         property: "og:title",
-        content: "Achievers Dorms | Student Accommodation Near University of Ilesa",
+        content: "Achievers Homes | The Most Comfortable Student Home, Opposite University of Ilesa Opposite University of Ilesa",
       },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
@@ -71,43 +71,43 @@ export const Route = createFileRoute("/")({
  const gallery = [
   {
     src: "/images/major-room.jpeg",
-    alt: "Main accommodation room at Achievers Dorms",
+    alt: "Main accommodation room at Achievers Homes",
   },
   {
     src: "/images/kitchen.jpeg",
-    alt: "Kitchen area at Achievers Dorms",
+    alt: "Kitchen area at Achievers Homes",
   },
   {
     src: "/images/bathroom.jpeg",
-    alt: "Bathroom at Achievers Dorms",
+    alt: "Bathroom at Achievers Homes",
   },
   {
     src: "/images/kitchen-cabinet.jpeg",
-    alt: "Kitchen cabinet and storage area at Achievers Dorms",
+    alt: "Kitchen cabinet and storage area at Achievers Homes",
   },
   {
     src: "/images/room-big.jpeg",
-    alt: "Spacious accommodation room at Achievers Dorms",
+    alt: "Spacious accommodation room at Achievers Homes",
   },
   {
     src: "/images/window.jpeg",
-    alt: "Window and natural light inside Achievers Dorms",
+    alt: "Window and natural light inside Achievers Homes",
   },
   {
     src: "/images/kitchen-another-view.jpeg",
-    alt: "Another view of the kitchen area at Achievers Dorms",
+    alt: "Another view of the kitchen area at Achievers Homes",
   },
   {
     src: "/images/compound.jpeg",
-    alt: "Exterior compound of Achievers Dorms",
+    alt: "Exterior compound of Achievers Homes",
   },
   {
     src: "/images/bathroom-side.jpeg",
-    alt: "Side view of the bathroom at Achievers Dorms",
+    alt: "Side view of the bathroom at Achievers Homes",
   },
   {
     src: "/images/toilet.jpeg",
-    alt: "Toilet area at Achievers Dorms",
+    alt: "Toilet area at Achievers Homes",
   },
 
 ];
@@ -122,22 +122,22 @@ const navLinks = [
 ] as const;
 
 const quickInfo: Array<{ icon: LucideIcon; label: string; value: string; href: string }> = [
-  { icon: MapPin, label: "Location", value: "Near University of Ilesa", href: "#location" },
-  { icon: Building2, label: "Accommodation", value: "Student Accommodation", href: "#accommodation" },
+  { icon: MapPin, label: "Location", value: "Opposite University of Ilesa", href: "#location" },
+  { icon: Building2, label: "Accommodation", value: "The Most Comfortable Student Home, Opposite University of Ilesa", href: "#accommodation" },
   { icon: Phone, label: "Phone", value: siteConfig.phoneDisplay, href: siteConfig.phoneHref },
   { icon: Mail, label: "Email", value: siteConfig.email, href: `mailto:${siteConfig.email}` },
 ];
 
 function Wordmark({ inverse = false }: { inverse?: boolean }) {
   return (
-    <a href="#home" className="group inline-flex items-center gap-3" aria-label="Achievers Dorms home">
+    <a href="#home" className="group inline-flex items-center gap-3" aria-label="Achievers Homes home">
       <span
         className={`grid size-10 place-items-center rounded-[12px] font-display text-lg font-extrabold ${inverse ? "bg-accent text-accent-foreground" : "bg-primary text-primary-foreground"}`}
       >
         A
       </span>
       <span className={`font-display text-lg font-bold ${inverse ? "text-hero-foreground" : "text-foreground"}`}>
-        Achievers Dorms
+        Achievers Homes
       </span>
     </a>
   );
@@ -217,10 +217,10 @@ useEffect(() => {
 
       <main>
         <section id="home" className="relative isolate min-h-[760px] overflow-hidden pt-20 sm:min-h-[820px]">
-          {/* <img src={room.url} alt="Achievers Dorms room with wardrobe and windows" className="absolute inset-0 -z-20 h-full w-full object-cover" fetchPriority="high" /> */}
+          {/* <img src={room.url} alt="Achievers Homes room with wardrobe and windows" className="absolute inset-0 -z-20 h-full w-full object-cover" fetchPriority="high" /> */}
           <img
   src="/images/major-room.jpeg"
-  alt="Main accommodation room at Achievers Dorms"
+  alt="Main accommodation room at Achievers Homes"
   className="absolute inset-0 -z-20 h-full w-full object-cover"
   fetchPriority="high"
 />
@@ -228,13 +228,13 @@ useEffect(() => {
           <div className="mx-auto flex min-h-[680px] max-w-7xl items-center px-5 py-20 sm:min-h-[740px] sm:px-8 lg:px-12">
             <div className="max-w-4xl">
               <p className="mb-5 inline-flex items-center gap-2 text-sm font-semibold text-hero-foreground/85">
-                <MapPin className="size-4 text-accent" /> Near University of Ilesa
+                <MapPin className="size-4 text-accent" /> Opposite University of Ilesa
               </p>
               <h1 className="max-w-4xl text-4xl font-extrabold leading-[1.08] text-hero-foreground sm:text-6xl lg:text-7xl">
-                Comfortable Student Accommodation Near the University of Ilesa
+                Comfortable The Most Comfortable Student Home, Opposite University of Ilesa Near the University of Ilesa
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-7 text-hero-foreground/80 sm:text-lg">
-                Achievers Dorms provides a convenient accommodation option for students looking for a comfortable place to stay near the University of Ilesa in Ilesa, Osun State.
+                Achievers Homes provides a convenient accommodation option for students looking for a comfortable place to stay near the University of Ilesa in Ilesa, Osun State.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Button asChild size="lg" variant="gold"><a href={siteConfig.phoneHref}><Phone />Call Us</a></Button>
@@ -257,10 +257,10 @@ useEffect(() => {
 
         <section id="about" className="bg-card py-20 sm:py-28">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20 lg:px-12">
-            <SectionHeading eyebrow="About us" title="About Achievers Dorms" />
+            <SectionHeading eyebrow="About us" title="About Achievers Homes" />
             <div>
               <p className="text-xl leading-8 text-foreground sm:text-2xl sm:leading-9">
-                Achievers Dorms provides student accommodation near the University of Ilesa in Ilesa, Osun State. We aim to provide students with a convenient place to stay while pursuing their studies.
+                Achievers Homes provides The Most Comfortable Student Home, Opposite University of Ilesa near the University of Ilesa in Ilesa, Osun State. We aim to provide students with a convenient place to stay while pursuing their studies.
               </p>
               <div className="mt-7 h-1 w-16 rounded-full bg-accent" />
             </div>
@@ -272,19 +272,19 @@ useEffect(() => {
             <div className="relative">
               {<img
   src="/images/kitchen.jpeg"
-  alt="Kitchen area at Achievers Dorms"
+  alt="Kitchen area at Achievers Homes"
   loading="lazy"
   width="1000"
   height="750"
   className="aspect-[4/3] w-full rounded-[24px] object-cover"
 />
-              /* <img src={kitchenette.url} alt="Kitchenette counter and sink inside Achievers Dorms" loading="lazy" width="1000" height="750" className="aspect-[4/3] w-full rounded-[24px] object-cover" /> */ }
+              /* <img src={kitchenette.url} alt="Kitchenette counter and sink inside Achievers Homes" loading="lazy" width="1000" height="750" className="aspect-[4/3] w-full rounded-[24px] object-cover" /> */ }
               <div className="absolute -bottom-5 -right-3 rounded-[16px] bg-primary p-5 text-primary-foreground shadow-xl sm:right-5">
                 <p className="font-display text-2xl font-bold">Ilesa</p><p className="text-sm text-primary-foreground/70">Osun State, Nigeria</p>
               </div>
             </div>
             <div>
-              <SectionHeading eyebrow="The accommodation" title="A Convenient Place to Stay" copy="Located near the University of Ilesa, Achievers Dorms offers students a convenient accommodation option within easy reach of their academic environment. Explore our photos to get a better view of the accommodation and surroundings." />
+              <SectionHeading eyebrow="The accommodation" title="A Convenient Place to Stay" copy="Located near the University of Ilesa, Achievers Homes offers students a convenient accommodation option within easy reach of their academic environment. Explore our photos to get a better view of the accommodation and surroundings." />
               <Button asChild variant="outline" size="lg" className="mt-8"><a href="#gallery">View the gallery <ArrowRight /></a></Button>
             </div>
           </div>
@@ -293,7 +293,7 @@ useEffect(() => {
         <section id="gallery" className="bg-card py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-              <SectionHeading eyebrow="Real photographs" title="Explore Achievers Dorms" copy="Take a closer look at the accommodation spaces through photographs provided by Achievers Dorms." />
+              <SectionHeading eyebrow="Real photographs" title="Explore Achievers Homes" copy="Take a closer look at the accommodation spaces through photographs provided by Achievers Homes." />
               <p className="shrink-0 text-sm text-muted-foreground">Tap a photo to enlarge</p>
             </div>
             <div className="mt-12 grid auto-rows-[220px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -308,15 +308,15 @@ useEffect(() => {
 
         <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-            <SectionHeading eyebrow="Directions" title="How to Get to Achievers Dorms" copy="Watch this short guide to see how to get to Achievers Dorms near the University of Ilesa." />
+            <SectionHeading eyebrow="Directions" title="Watch this short guide to see how to get to Achievers Homes from the University of Ilesa main gate." copy="Watch this short guide to see how to get to Achievers Homes near the University of Ilesa." />
             <div className="mt-10 aspect-video overflow-hidden rounded-[24px] bg-primary">
               {siteConfig.youtubeUrl ? (
-                <iframe className="h-full w-full" src={siteConfig.youtubeUrl} title="How to get to Achievers Dorms" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                <iframe className="h-full w-full" src={siteConfig.youtubeUrl} title="How to get to Achievers Homes" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
               ) : (
                 <div className="flex h-full flex-col items-center justify-center px-6 text-center text-primary-foreground">
                   <span className="grid size-16 place-items-center rounded-full bg-accent text-accent-foreground"><Play className="ml-1 size-6" /></span>
                   <p className="mt-5 font-display text-xl font-semibold">Directions video coming soon</p>
-                  <p className="mt-2 max-w-md text-sm text-primary-foreground/65">The official Achievers Dorms route guide will appear here when the client’s YouTube link is available.</p>
+                  <p className="mt-2 max-w-md text-sm text-primary-foreground/65">The official Achievers Homes route guide will appear here when the client’s YouTube link is available.</p>
                 </div>
               )}
             </div>
@@ -332,17 +332,11 @@ useEffect(() => {
       </h3>
 
       <p className="mt-4 leading-7 text-muted-foreground">
-        From the University of Ilesa main gate, go straight from the gate.
-        At the point where the road divides, take the left direction towards
-        Abanise. Continue straight towards the Golf Club and look out for the
-        Golf Club signpost on your right.
+        From the University of Ilesa main gate, go straight from the gate. At the point where the road divides, take the left direction towards Ibodi/ Ile Ife. Continue straight towards Abanishe Area and look out for the Golf Club signpost on your right.
       </p>
 
       <p className="mt-4 leading-7 text-muted-foreground">
-        Continue until you reach the junction where the transformer is
-        located. At the transformer, turn right into the street and continue
-        approximately 20 metres. The twin buildings ahead are Achievers
-        Dorms.
+        Continue until you reach the junction where the transformer is located. At the transformer, turn right into the street and continue approximately 20 metres. The twin buildings ahead are Achievers Dorms.
       </p>
 
       <div className="mt-6 rounded-[16px] bg-muted p-4">
@@ -356,12 +350,12 @@ useEffect(() => {
         <section className="bg-primary py-20 text-primary-foreground sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <p className="text-xs font-bold uppercase text-accent">Good to know</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">Why Achievers Dorms?</h2>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">Why Achievers Homes?</h2>
             <div className="mt-12 grid gap-px overflow-hidden rounded-[20px] bg-primary-foreground/15 md:grid-cols-3">
               {[
                 ["01", "Convenient Location", "Located near the University of Ilesa."],
-                ["02", "Student Accommodation", "A place designed around the accommodation needs of students."],
-                ["03", "Easy to Contact", "Reach Achievers Dorms directly by phone, WhatsApp or email."],
+                ["02", "The Most Comfortable Student Home, Opposite University of Ilesa", "A place designed around the accommodation needs of students."],
+                ["03", "Easy to Contact", "Reach Achievers Homes directly by phone, WhatsApp or email."],
               ].map(([number, title, copy]) => (
                 <article key={title} className="bg-primary p-8 sm:p-10">
                   <span className="text-sm font-bold text-accent">{number}</span>
@@ -375,10 +369,10 @@ useEffect(() => {
 
         <section id="location" className="bg-card py-20 sm:py-28">
           <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-12">
-            <SectionHeading eyebrow="Location" title="Close to Your Academic Environment" copy="Achievers Dorms is located near the University of Ilesa, making it a practical student accommodation option in Ilesa, Osun State." />
+            <SectionHeading eyebrow="Location" title="Close to Your Academic Environment" copy="Achievers Homes is located near the University of Ilesa, making it a practical The Most Comfortable Student Home, Opposite University of Ilesa option in Ilesa, Osun State." />
             <div className="rounded-[20px] border border-border bg-background p-8 sm:p-10">
               <MapPin className="size-8 text-accent" />
-              <h3 className="mt-8 text-2xl font-bold">Achievers Dorms</h3>
+              <h3 className="mt-8 text-2xl font-bold">Achievers Homes</h3>
               <p className="mt-3 max-w-md leading-7 text-muted-foreground">{siteConfig.location}</p>
               <div className="mt-8 flex items-center gap-3 border-t border-border pt-6 text-sm font-medium"><Check className="size-5 text-accent" /> Located in the Abanise area, approximately 300 metres from the University of Ilesa main gate.</div>
             </div>
@@ -391,7 +385,7 @@ useEffect(() => {
   <SectionHeading
     eyebrow="Quality & Features"
     title="Designed for Comfortable Student Living"
-    copy="Achievers Dorms provides practical accommodation spaces with features designed around everyday student living."
+    copy="Achievers Homes provides practical accommodation spaces with features designed around everyday student living."
   />
 </div>
     <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -446,11 +440,11 @@ useEffect(() => {
       <footer className="bg-footer pb-24 pt-16 text-hero-foreground md:pb-10">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <div className="grid gap-12 border-b border-hero-foreground/15 pb-12 md:grid-cols-[1.3fr_0.7fr_1fr]">
-            <div><Wordmark inverse /><p className="mt-5 max-w-sm leading-7 text-footer-muted">Student accommodation near the University of Ilesa, Ilesa, Osun State, Nigeria.</p></div>
+            <div><Wordmark inverse /><p className="mt-5 max-w-sm leading-7 text-footer-muted">The Most Comfortable Student Home, Opposite University of Ilesa near the University of Ilesa, Ilesa, Osun State, Nigeria.</p></div>
             <div><h3 className="text-sm font-bold">Navigate</h3><nav className="mt-5 grid gap-3 text-sm text-footer-muted">{navLinks.map(([label, href]) => <a key={href} href={href} className="hover:text-hero-foreground">{label}</a>)}</nav></div>
             <div><h3 className="text-sm font-bold">Contact</h3><div className="mt-5 grid gap-3 text-sm text-footer-muted"><a href={siteConfig.phoneHref}>{siteConfig.phoneDisplay}</a><a className="break-all" href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a><p>{siteConfig.location}</p></div></div>
           </div>
-          <p className="pt-8 text-sm text-footer-muted">© 2026 Achievers Dorms. All rights reserved.</p>
+          <p className="pt-8 text-sm text-footer-muted">© 2026 Achievers Homes. All rights reserved.</p>
         </div>
       </footer>
 
@@ -477,7 +471,7 @@ useEffect(() => {
       </button>
 
       <p className="text-xs font-bold uppercase text-accent">
-        Achievers Dorms
+        Achievers Homes
       </p>
 
       <h2

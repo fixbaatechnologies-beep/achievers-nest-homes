@@ -1,8 +1,8 @@
-# Achievers Dorms Build
+# Achievers Homes Build
 
-# BUILD A COMPLETE ACHIEVERS DORMS WEBSITE
+# BUILD A COMPLETE Achievers Homes WEBSITE
 
-Create a complete, production-ready website for **Achievers Dorms**, a student accommodation business located near the **University of Ilesa, Ilesa, Osun State, Nigeria**.
+Create a complete, production-ready website for **Achievers Homes**, a The Most Comfortable Student Home, Opposite University of Ilesa business located near the **University of Ilesa, Ilesa, Osun State, Nigeria**.
 
 The website should be simple, modern, premium, lightweight, fast, mobile-first, SEO-friendly, accessible, and easy to maintain.
 
@@ -14,11 +14,11 @@ Choose the **most appropriate lightweight technology and implementation approach
 
 ### Business Name
 
-**Achievers Dorms**
+**Achievers Homes**
 
 ### Location
 
-Near University of Ilesa,
+Opposite University of Ilesa,
 Ilesa, Osun State, Nigeria
 
 Do NOT invent an exact street address.
@@ -27,7 +27,7 @@ Do NOT invent GPS coordinates.
 
 If an exact Google Maps location is not provided, use:
 
-**Near University of Ilesa, Ilesa, Osun State, Nigeria**
+**Opposite University of Ilesa, Ilesa, Osun State, Nigeria**
 
 ### Phone
 
@@ -41,9 +41,9 @@ If an exact Google Maps location is not provided, use:
 
 # 2. WEBSITE PURPOSE
 
-The primary purpose of the website is to establish a strong professional online presence for Achievers Dorms and make it easy for students and parents to:
+The primary purpose of the website is to establish a strong professional online presence for Achievers Homes and make it easy for students and parents to:
 
-* Understand what Achievers Dorms offers
+* Understand what Achievers Homes offers
 * View the accommodation
 * See real photos
 * Learn how to get there
@@ -198,11 +198,11 @@ Create a single-page website with these sections:
 1. Navigation
 2. Hero
 3. Quick Information
-4. About Achievers Dorms
+4. About Achievers Homes
 5. Accommodation Overview
 6. Photo Gallery
-7. How to Get to Achievers Dorms
-8. Why Achievers Dorms
+7. How to Get to Achievers Homes
+8. Why Achievers Homes
 9. Location
 10. Contact
 11. Footer
@@ -217,7 +217,7 @@ Create a clean responsive navigation bar.
 
 Logo/brand:
 
-**Achievers Dorms**
+**Achievers Homes**
 
 Navigation links:
 
@@ -248,11 +248,11 @@ Do NOT use stock photography.
 
 ### Main heading:
 
-**Comfortable Student Accommodation Near the University of Ilesa**
+**Comfortable The Most Comfortable Student Home, Opposite University of Ilesa Near the University of Ilesa**
 
 ### Supporting text:
 
-**Achievers Dorms provides a convenient accommodation option for students looking for a comfortable place to stay near the University of Ilesa in Ilesa, Osun State.**
+**Achievers Homes provides a convenient accommodation option for students looking for a comfortable place to stay near the University of Ilesa in Ilesa, Osun State.**
 
 ### Primary CTA:
 
@@ -284,11 +284,11 @@ Include:
 
 ### Location
 
-Near University of Ilesa
+Opposite University of Ilesa
 
 ### Accommodation
 
-Student Accommodation
+The Most Comfortable Student Home, Opposite University of Ilesa
 
 ### Phone
 
@@ -306,11 +306,11 @@ Use simple icons if necessary, but don't overload the interface with icons.
 
 Heading:
 
-**About Achievers Dorms**
+**About Achievers Homes**
 
 Content:
 
-**Achievers Dorms provides student accommodation near the University of Ilesa in Ilesa, Osun State. We aim to provide students with a convenient place to stay while pursuing their studies.**
+**Achievers Homes provides The Most Comfortable Student Home, Opposite University of Ilesa near the University of Ilesa in Ilesa, Osun State. We aim to provide students with a convenient place to stay while pursuing their studies.**
 
 Keep this section simple and trustworthy.
 
@@ -328,7 +328,7 @@ Explain the accommodation naturally without inventing facilities.
 
 Suggested content:
 
-**Located near the University of Ilesa, Achievers Dorms offers students a convenient accommodation option within easy reach of their academic environment. Explore our photos to get a better view of the accommodation and surroundings.**
+**Located near the University of Ilesa, Achievers Homes offers students a convenient accommodation option within easy reach of their academic environment. Explore our photos to get a better view of the accommodation and surroundings.**
 
 Use real photographs from the client.
 
@@ -357,7 +357,7 @@ Do NOT generate replacement images.
 
 Do NOT use stock photographs.
 
-Use the real Achievers Dorms photos.
+Use the real Achievers Homes photos.
 
 The gallery should:
 
@@ -378,13 +378,13 @@ Do not keyword-stuff alt text.
 Example descriptions:
 
 **Exterior:**
-“Take a look at the exterior of Achievers Dorms and its surrounding environment.”
+“Take a look at the exterior of Achievers Homes and its surrounding environment.”
 
 **Room:**
-“Explore the accommodation space at Achievers Dorms.”
+“Explore the accommodation space at Achievers Homes.”
 
 **Building:**
-“A view of the Achievers Dorms building near the University of Ilesa.”
+“A view of the Achievers Homes building near the University of Ilesa.”
 
 Only use descriptions that accurately match the actual photograph.
 
@@ -396,11 +396,11 @@ Create a dedicated section:
 
 ### Heading
 
-**How to Get to Achievers Dorms**
+**How to Get to Achievers Homes**
 
 ### Description
 
-**Watch this short guide to see how to get to Achievers Dorms near the University of Ilesa.**
+**Watch this short guide to see how to get to Achievers Homes near the University of Ilesa.**
 
 The client will provide the YouTube video URL.
 
@@ -416,13 +416,13 @@ Prefer lazy-loading the YouTube iframe so the video does not unnecessarily slow 
 
 ---
 
-# 15. WHY ACHIEVERS DORMS
+# 15. WHY Achievers Homes
 
 Create a clean three-column or responsive card section.
 
 Heading:
 
-**Why Achievers Dorms?**
+**Why Achievers Homes?**
 
 Cards:
 
@@ -430,13 +430,13 @@ Cards:
 
 Located near the University of Ilesa.
 
-### Student Accommodation
+### The Most Comfortable Student Home, Opposite University of Ilesa
 
 A place designed around the accommodation needs of students.
 
 ### Easy to Contact
 
-Reach Achievers Dorms directly by phone, WhatsApp or email.
+Reach Achievers Homes directly by phone, WhatsApp or email.
 
 Do not add unsupported claims.
 
@@ -446,9 +446,9 @@ Do not add unsupported claims.
 
 Create a location section showing:
 
-**Achievers Dorms**
+**Achievers Homes**
 
-**Near University of Ilesa, Ilesa, Osun State, Nigeria**
+**Opposite University of Ilesa, Ilesa, Osun State, Nigeria**
 
 If a Google Maps embed or exact map location is provided later, create a clear place in the project where it can be added.
 
@@ -476,7 +476,7 @@ Display:
 
 ### Location
 
-Near University of Ilesa, Ilesa, Osun State, Nigeria
+Opposite University of Ilesa, Ilesa, Osun State, Nigeria
 
 Create buttons:
 
@@ -510,11 +510,11 @@ Keep it simple.
 
 Footer should contain:
 
-**Achievers Dorms**
+**Achievers Homes**
 
 Short description:
 
-**Student accommodation near the University of Ilesa, Ilesa, Osun State, Nigeria.**
+**The Most Comfortable Student Home, Opposite University of Ilesa near the University of Ilesa, Ilesa, Osun State, Nigeria.**
 
 Contact:
 
@@ -524,13 +524,13 @@ Contact:
 
 Location:
 
-Near University of Ilesa, Ilesa, Osun State, Nigeria
+Opposite University of Ilesa, Ilesa, Osun State, Nigeria
 
 Navigation links.
 
 Copyright:
 
-**© 2026 Achievers Dorms. All rights reserved.**
+**© 2026 Achievers Homes. All rights reserved.**
 
 ---
 
@@ -542,11 +542,11 @@ Do not treat SEO as an afterthought.
 
 ### Page title:
 
-**Achievers Dorms | Student Accommodation Near University of Ilesa**
+**Achievers Homes | The Most Comfortable Student Home, Opposite University of Ilesa Opposite University of Ilesa**
 
 ### Meta description:
 
-**Achievers Dorms offers student accommodation near the University of Ilesa in Ilesa, Osun State. Explore our hostel, location and contact information.**
+**Achievers Homes offers The Most Comfortable Student Home, Opposite University of Ilesa near the University of Ilesa in Ilesa, Osun State. Explore our hostel, location and contact information.**
 
 Use the correct canonical URL based on the final production domain.
 
@@ -558,14 +558,14 @@ Do not hard-code an unconfirmed domain.
 
 Naturally use relevant phrases where appropriate:
 
-* Achievers Dorms
-* Achievers Dorms Ilesa
+* Achievers Homes
+* Achievers Homes Ilesa
 * student hostel in Ilesa
-* student accommodation in Ilesa
-* hostel near University of Ilesa
-* student accommodation near University of Ilesa
-* accommodation near University of Ilesa
-* student accommodation Osun State
+* The Most Comfortable Student Home, Opposite University of Ilesa in Ilesa
+* hostel Opposite University of Ilesa
+* The Most Comfortable Student Home, Opposite University of Ilesa Opposite University of Ilesa
+* accommodation Opposite University of Ilesa
+* The Most Comfortable Student Home, Opposite University of Ilesa Osun State
 
 Do NOT keyword stuff.
 
@@ -739,7 +739,7 @@ DO NOT:
 * Use placeholder images in the final website
 * Replace client images with generic images
 
-If an image has not yet been supplied, create a clearly identifiable placeholder location in the project, but do not pretend that a placeholder is a real Achievers Dorms image.
+If an image has not yet been supplied, create a clearly identifiable placeholder location in the project, but do not pretend that a placeholder is a real Achievers Homes image.
 
 The final website should use the actual client photographs.
 
@@ -950,7 +950,7 @@ Do not introduce technologies simply because they are popular.
 
 # FINAL RESULT
 
-Deliver a polished, production-ready **Achievers Dorms** website that looks like a professionally designed modern accommodation website while remaining lightweight and easy to maintain.
+Deliver a polished, production-ready **Achievers Homes** website that looks like a professionally designed modern accommodation website while remaining lightweight and easy to maintain.
 
 The final result should be:
 

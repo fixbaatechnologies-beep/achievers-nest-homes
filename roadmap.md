@@ -1,4 +1,4 @@
-## Achievers Dorms website
+## Achievers Homes website
 - [x] Build responsive single-page experience
 - [x] Add supplied photos and gallery lightbox
 - [x] Add contact links, mobile menu, and mobile contact bar
