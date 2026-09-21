@@ -18,13 +18,6 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
-// import bathroom from "@/assets/achievers-dorms-bathroom.jpeg.asset.json";
-// import counter from "@/assets/achievers-dorms-counter.jpeg.asset.json";
-// import kitchenetteStorage from "@/assets/achievers-dorms-kitchenette-storage.jpeg.asset.json";
-// import kitchenette from "@/assets/achievers-dorms-kitchenette.jpeg.asset.json";
-// import roomFloor from "@/assets/achievers-dorms-room-floor.jpeg.asset.json";
-// import roomWardrobe from "@/assets/achievers-dorms-room-wardrobe.jpeg.asset.json";
-// import room from "@/assets/achievers-dorms-room.jpeg.asset.json";
 
 const description =
   "Achievers Homes offers the most comfortable student accommodation opposite University of Ilesa in Ilesa, Osun State. Explore our hostel, location and contact information.";
@@ -48,7 +41,7 @@ export const Route = createFileRoute("/")({
       {
         type: "application/ld+json",
         children: JSON.stringify({
-          "@context": "[https://schema.org](https://schema.org)",
+          "@context": "https://schema.org",
           "@type": "LodgingBusiness",
           name: siteConfig.name,
           description,
@@ -68,7 +61,7 @@ export const Route = createFileRoute("/")({
 });
 
 
- const gallery = [
+const gallery = [
   {
     src: "/images/major-room.jpeg",
     alt: "Main accommodation room at Achievers Homes",
@@ -109,7 +102,6 @@ export const Route = createFileRoute("/")({
     src: "/images/toilet.jpeg",
     alt: "Toilet area at Achievers Homes",
   },
-
 ];
 
 const navLinks = [
@@ -155,8 +147,9 @@ function SectionHeading({ eyebrow, title, copy }: { eyebrow: string; title: stri
 
 function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
-const [activeImage, setActiveImage] = useState<number | null>(null);
-const [showBookingPopup, setShowBookingPopup] = useState(false);
+  const [activeImage, setActiveImage] = useState<number | null>(null);
+  const [showBookingPopup, setShowBookingPopup] = useState(false);
+  
   useEffect(() => {
     if (activeImage === null) return;
     const onKeyDown = (event: KeyboardEvent) => {
@@ -171,13 +164,15 @@ const [showBookingPopup, setShowBookingPopup] = useState(false);
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [activeImage]);
-useEffect(() => {
-  const timer = window.setTimeout(() => {
-    setShowBookingPopup(true);
-  }, 5000);
 
-  return () => window.clearTimeout(timer);
-}, []);
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setShowBookingPopup(true);
+    }, 5000);
+
+    return () => window.clearTimeout(timer);
+  }, []);
+  
   return (
     <div className="bg-background pb-16 text-foreground md:pb-0">
       <header className="fixed inset-x-0 top-0 z-40 border-b border-border/70 bg-background/95 backdrop-blur-md">
@@ -191,9 +186,15 @@ useEffect(() => {
             ))}
             <Button asChild className="transition-transform duration-300 hover:scale-105 active:scale-95"><a href="#contact">Contact Us</a></Button>
           </nav>
-          <Button "Close "Open : ? aria-expanded="{menuOpen}" aria-label="{menuOpen" className="lg:hidden transition-transform duration-300 hover:scale-105 active:scale-95" menu" menu"} onClick="{()" size="icon" variant="ghost"> setMenuOpen((open) => !open)}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="lg:hidden transition-transform duration-300 hover:scale-105 active:scale-95"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
           >
-            {menuOpen ? <X/> : <Menu/>}
+            {menuOpen ? <X /> : <Menu />}
           </Button>
         </div>
         {menuOpen ? (
@@ -211,13 +212,12 @@ useEffect(() => {
 
       <main>
         <section id="home" className="relative isolate min-h-[760px] overflow-hidden pt-20 sm:min-h-[820px]">
-          {/* <img src={room.url} alt="Achievers Homes room with wardrobe and windows" className="absolute inset-0 -z-20 h-full w-full object-cover" fetchPriority="high" /> */}
           <img
-  src="/images/major-room.jpeg"
-  alt="Main accommodation room at Achievers Homes"
-  className="absolute inset-0 -z-20 h-full w-full object-cover"
-  fetchPriority="high"
-/>
+            src="/images/major-room.jpeg"
+            alt="Main accommodation room at Achievers Homes"
+            className="absolute inset-0 -z-20 h-full w-full object-cover"
+            fetchPriority="high"
+          />
           <div className="absolute inset-0 -z-10 bg-primary/75" />
           <div className="mx-auto flex min-h-[680px] max-w-7xl items-center px-5 py-20 sm:min-h-[740px] sm:px-8 lg:px-12 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             <div className="max-w-4xl">
@@ -267,15 +267,14 @@ useEffect(() => {
         <section id="accommodation" className="py-20 sm:py-28 overflow-hidden">
           <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:px-12">
             <div className="relative group">
-              {<img
-  src="/images/kitchen.jpeg"
-  alt="Kitchen area at Achievers Homes"
-  loading="lazy"
-  width="1000"
-  height="750"
-  className="aspect-[4/3] w-full rounded-[24px] object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-/>
-              /* <img src={kitchenette.url} alt="Kitchenette counter and sink inside Achievers Homes" loading="lazy" width="1000" height="750" className="aspect-[4/3] w-full rounded-[24px] object-cover" /> */ }
+              <img
+                src="/images/kitchen.jpeg"
+                alt="Kitchen area at Achievers Homes"
+                loading="lazy"
+                width="1000"
+                height="750"
+                className="aspect-[4/3] w-full rounded-[24px] object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              />
               <div className="absolute -bottom-5 -right-3 rounded-[16px] bg-primary p-5 text-primary-foreground shadow-xl sm:right-5 transition-transform duration-500 group-hover:-translate-y-2">
                 <p className="font-display text-2xl font-bold">Ilesa</p><p className="text-sm text-primary-foreground/70">Osun State, Nigeria</p>
               </div>
@@ -319,6 +318,7 @@ useEffect(() => {
             </div>
           </div>
         </section>
+        
         <div className="mt-10 rounded-[24px] border border-border bg-card p-6 sm:p-8 transition-all duration-300 hover:shadow-md">
           <div className="flex items-start gap-4">
             <MapPin className="mt-1 size-6 shrink-0 text-accent animate-bounce"/>
@@ -344,6 +344,7 @@ useEffect(() => {
             </div>
           </div>
         </div>
+        
         <section className="bg-primary py-20 text-primary-foreground sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <p className="text-xs font-bold uppercase tracking-wider text-accent">Good to know</p>
@@ -447,70 +448,70 @@ useEffect(() => {
       </div>
 
       {showBookingPopup ? (
-  <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary/50 p-5 backdrop-blur-sm animate-in fade-in duration-500">
-    <div
-      className="relative w-full max-w-md rounded-[24px] bg-background p-7 shadow-2xl sm:p-8 animate-in zoom-in-95 duration-500"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="booking-popup-title"
-    >
-      <button
-        type="button"
-        onClick={() => setShowBookingPopup(false)}
-        className="absolute right-4 top-4 grid size-9 place-items-center rounded-full text-muted-foreground transition-all duration-300 hover:bg-muted hover:text-foreground hover:rotate-90"
-        aria-label="Close booking popup"
-      >
-        <X className="size-5"/>
-      </button>
-
-      <p className="text-xs font-bold uppercase tracking-wider text-accent">
-        Achievers Homes
-      </p>
-
-      <h2
-        id="booking-popup-title"
-        className="mt-3 font-display text-2xl font-bold text-foreground sm:text-3xl"
-      >
-        Looking for accommodation opposite University of Ilesa?
-      </h2>
-
-      <p className="mt-4 leading-7 text-muted-foreground">
-        Call us to book your room.
-      </p>
-
-      <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-        <Button asChild className="flex-1 transition-transform duration-300 hover:scale-105 active:scale-95 hover:shadow-lg" size="lg" variant="gold">
-          <a href={siteConfig.phoneHref}>
-            <Phone/>
-            Call Now
-          </a>
-        </Button>
-
-        <Button asChild className="flex-1 transition-transform duration-300 hover:scale-105 active:scale-95" size="lg" variant="outline">
-          <a
-            href={siteConfig.whatsappHref}
-            target="_blank"
-            rel="noreferrer"
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary/50 p-5 backdrop-blur-sm animate-in fade-in duration-500">
+          <div
+            className="relative w-full max-w-md rounded-[24px] bg-background p-7 shadow-2xl sm:p-8 animate-in zoom-in-95 duration-500"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="booking-popup-title"
           >
-            <MessageCircle/>
-            WhatsApp
-          </a>
-        </Button>
-      </div>
+            <button
+              type="button"
+              onClick={() => setShowBookingPopup(false)}
+              className="absolute right-4 top-4 grid size-9 place-items-center rounded-full text-muted-foreground transition-all duration-300 hover:bg-muted hover:text-foreground hover:rotate-90"
+              aria-label="Close booking popup"
+            >
+              <X className="size-5"/>
+            </button>
 
-      <p className="mt-4 text-center text-sm font-semibold text-muted-foreground">
-        {siteConfig.phoneDisplay}
-      </p>
-    </div>
-  </div>
-) : null}
+            <p className="text-xs font-bold uppercase tracking-wider text-accent">
+              Achievers Homes
+            </p>
+
+            <h2
+              id="booking-popup-title"
+              className="mt-3 font-display text-2xl font-bold text-foreground sm:text-3xl"
+            >
+              Looking for accommodation opposite University of Ilesa?
+            </h2>
+
+            <p className="mt-4 leading-7 text-muted-foreground">
+              Call us to book your room.
+            </p>
+
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <Button asChild className="flex-1 transition-transform duration-300 hover:scale-105 active:scale-95 hover:shadow-lg" size="lg" variant="gold">
+                <a href={siteConfig.phoneHref}>
+                  <Phone/>
+                  Call Now
+                </a>
+              </Button>
+
+              <Button asChild className="flex-1 transition-transform duration-300 hover:scale-105 active:scale-95" size="lg" variant="outline">
+                <a
+                  href={siteConfig.whatsappHref}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <MessageCircle/>
+                  WhatsApp
+                </a>
+              </Button>
+            </div>
+
+            <p className="mt-4 text-center text-sm font-semibold text-muted-foreground">
+              {siteConfig.phoneDisplay}
+            </p>
+          </div>
+        </div>
+      ) : null}
 
       {activeImage !== null && gallery[activeImage] ? (
         <div className="fixed inset-0 z-50 grid place-items-center bg-primary/95 p-4 backdrop-blur-md animate-in fade-in duration-300" role="dialog" aria-modal="true" aria-label="Photo viewer" onClick={() => setActiveImage(null)}>
-          <Button className="absolute right-4 top-4 transition-transform duration-300 hover:scale-110 hover:rotate-90" onClick="{()" size="icon" variant="light"> setActiveImage(null)} aria-label="Close photo"><X/></Button>
-          <Button className="absolute left-4 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:scale-110 hover:-translate-x-1" onClick="{(event)" size="icon" variant="light"> { event.stopPropagation(); setActiveImage((activeImage - 1 + gallery.length) % gallery.length); }} aria-label="Previous photo"><ChevronLeft/></Button>
+          <Button className="absolute right-4 top-4 transition-transform duration-300 hover:scale-110 hover:rotate-90" onClick={() => setActiveImage(null)} size="icon" variant="light" aria-label="Close photo"><X/></Button>
+          <Button className="absolute left-4 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:scale-110 hover:-translate-x-1" onClick={(event) => { event.stopPropagation(); setActiveImage((activeImage - 1 + gallery.length) % gallery.length); }} size="icon" variant="light" aria-label="Previous photo"><ChevronLeft/></Button>
           <img src={gallery[activeImage]?.src} alt={gallery[activeImage]?.alt} className="max-h-[85vh] max-w-[88vw] rounded-[16px] object-contain shadow-2xl animate-in zoom-in-95 duration-300" onClick={(event) => event.stopPropagation()} />
-          <Button className="absolute right-4 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:scale-110 hover:translate-x-1" onClick="{(event)" size="icon" variant="light"> { event.stopPropagation(); setActiveImage((activeImage + 1) % gallery.length); }} aria-label="Next photo"><ChevronRight/></Button>
+          <Button className="absolute right-4 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:scale-110 hover:translate-x-1" onClick={(event) => { event.stopPropagation(); setActiveImage((activeImage + 1) % gallery.length); }} size="icon" variant="light" aria-label="Next photo"><ChevronRight/></Button>
         </div>
       ) : null}
     </div>
