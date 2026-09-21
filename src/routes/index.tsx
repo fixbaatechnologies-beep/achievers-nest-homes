@@ -329,7 +329,7 @@ function HomePage() {
               </h3>
 
               <p className="mt-4 leading-7 text-muted-foreground">
-                From the <strong className="font-bold text-foreground">University of Ilesa main gate</strong>, go straight from the gate. At the point where the road divides, take the left direction towards <strong className="font-bold text-foreground">Ibodi/ Ile Ife</strong>. Continue straight towards <strong className="font-bold text-foreground">Abanishe Area</strong> and look out for the <strong className="font-bold text-foreground">Golf Club signpost</strong> on your right.
+                From the <strong className="font-bold text-foreground">University of Ilesa main gate</strong>, go straight from the gate. At the point where the road divides, take the left direction towards <strong className="font-bold text-foreground">Ibodi/ Ile Ife</strong>. Continue straight towards <strong className="font-bold text-foreground">Abanishe Area</strong> and look out for the <strong className="font-bold text-foreground">Golf Club signpost</strong> on your left.
               </p>
 
               <p className="mt-4 leading-7 text-muted-foreground">
