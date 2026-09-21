@@ -1,6 +1,3 @@
-Here is your complete, updated code. All layout, styling, and functionality remain exactly the same, but the text has been carefully cleaned up to reflect "Achievers Homes", ensure the location consistently reads "Opposite University of Ilesa", and fix the duplicated headline wording as requested.
-
-```tsx
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
@@ -526,5 +523,3 @@ useEffect(() => {
     </div>
   );
 }
-
-```
