@@ -986,6 +986,7 @@ Continue developing this project in the [Lovable editor](https://lovable.dev/pro
 - **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
+"It's a React and TypeScript application built with TanStack Start, styled with Tailwind CSS, bundled with Vite, and deployed on Vercel."
 
 Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
