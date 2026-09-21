@@ -379,40 +379,40 @@ useEffect(() => {
           </div>
         </section>
 
-        <section className="bg-primary py-20 text-primary-foreground sm:py-28">
-  
-   <div className="[&_h2]:!text-white [&_p]:!text-white [&_p]:!text-white/80">
-  <SectionHeading
-    eyebrow="Quality & Features"
-    title="Designed for Comfortable Student Living"
-    copy="Achievers Homes provides practical accommodation spaces with features designed around everyday student living."
-  />
-</div>
-    <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {[
-        ["01", "Accommodation Rooms", "Comfortable accommodation spaces for student living."],
-        ["02", "Kitchen Areas", "Dedicated kitchen areas with practical storage and cabinet spaces."],
-        ["03", "Wardrobes", "Wardrobe spaces provided within the accommodation rooms."],
-        ["04", "Private Bathrooms", "Dedicated bathroom spaces within the accommodation."],
-        ["05", "Electrical Points", "Electrical sockets and fittings provided within the rooms."],
-        ["06", "Lighting Points", "Lighting points provided throughout the accommodation spaces."],
-      ].map(([number, title, copy]) => (
-        <article
-          key={title}
-          className="rounded-[20px] border border-primary-foreground/10 bg-primary-foreground/5 p-7"
-        >
-          <span className="text-sm font-bold text-accent">{number}</span>
-          <h3 className="mt-5 text-xl font-bold">{title}</h3>
-          <p className="mt-3 leading-7 text-primary-foreground/65">
-            {copy}
-          </p>
-        </article>
-      ))}
-    </div>
-  </div>
-  
-</section>
-
+      <section className="bg-primary py-20 text-primary-foreground sm:py-28">
+          <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+            <div className="[&_h2]:!text-white [&_p:first-of-type]:!text-white [&_p:last-of-type]:!text-white/80">
+              <SectionHeading
+                eyebrow="Quality & Features"
+                title="Designed for Comfortable Student Living"
+                copy="Achievers Homes provides practical accommodation spaces with features designed around everyday student living."
+              />
+            </div>
+            
+            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                ["01", "Accommodation Rooms", "Comfortable accommodation spaces for student living."],
+                ["02", "Kitchen Areas", "Dedicated kitchen areas with practical storage and cabinet spaces."],
+                ["03", "Wardrobes", "Wardrobe spaces provided within the accommodation rooms."],
+                ["04", "Private Bathrooms", "Dedicated bathroom spaces within the accommodation."],
+                ["05", "Electrical Points", "Electrical sockets and fittings provided within the rooms."],
+                ["06", "Lighting Points", "Lighting points provided throughout the accommodation spaces."],
+              ].map(([number, title, copy]) => (
+                <article
+                  key={title}
+                  className="rounded-[20px] border border-primary-foreground/10 bg-primary-foreground/5 p-7"
+                >
+                  <span className="text-sm font-bold text-accent">{number}</span>
+                  <h3 className="mt-5 text-xl font-bold">{title}</h3>
+                  <p className="mt-3 leading-7 text-primary-foreground/65">
+                    {copy}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+        
         <section id="contact" className="py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="rounded-[24px] bg-primary px-6 py-12 text-primary-foreground sm:px-12 sm:py-16 lg:px-16">
