@@ -73,8 +73,8 @@ const gallery = [
     alt: "Main accommodation room at Achievers Homes",
   },
   {
-    src: "/images/kitchen.jpeg",
-    alt: "Kitchen area at Achievers Homes",
+    src: "/images/front-hostel-2.jpeg",
+    alt: "Front view of Achievers Homes",
   },
   {
     src: "/images/bathroom.jpeg",
@@ -88,6 +88,19 @@ const gallery = [
     src: "/images/room-big.jpeg",
     alt: "Spacious accommodation room at Achievers Homes",
   },
+
+{
+    src: "/images/room1.jpeg",
+    alt: "Spacious accommodation room at Achievers Homes",
+  },
+
+{
+    src: "/images/ceilling.jpeg",
+    alt: "Spacious accommodation room at Achievers Homes",
+  },
+
+
+
   {
     src: "/images/window.jpeg",
     alt: "Window and natural light inside Achievers Homes",
