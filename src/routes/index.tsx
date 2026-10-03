@@ -76,6 +76,15 @@ const gallery = [
     src: "/images/front-hostel-2.jpeg",
     alt: "Front view of Achievers Homes",
   },
+
+{
+    src: "/images/front-hostel-3.jpeg",
+    alt: "Front view of Achievers Homes",
+  },
+
+
+
+
   {
     src: "/images/bathroom.jpeg",
     alt: "Bathroom at Achievers Homes",
@@ -118,6 +127,8 @@ const gallery = [
     src: "/images/compound.jpeg",
     alt: "Exterior compound of Achievers Homes",
   },
+
+
   {
     src: "/images/bathroom-side.jpeg",
     alt: "Side view of the bathroom at Achievers Homes",
