@@ -293,8 +293,8 @@ function HomePage() {
           <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:px-12">
             <div className="relative group">
               <img
-                src="/images/kitchen.jpeg"
-                alt="Kitchen area at Achievers Homes"
+                src="/images/fron-hostel-4.jpeg"
+                alt="Front view of Achievers Homes"
                 loading="lazy"
                 width="1000"
                 height="750"
