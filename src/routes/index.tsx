@@ -19,15 +19,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
-// Carousel Imports
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-
-
 const description =
   "Achievers Homes offers the most comfortable student accommodation opposite University of Ilesa in Ilesa, Osun State. Explore our hostel, location and contact information.";
 
@@ -164,7 +155,17 @@ function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeImage, setActiveImage] = useState<number | null>(null);
   const [showBookingPopup, setShowBookingPopup] = useState(false);
-  
+  const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
+
+  // Automatic slide transition every 4.5 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentHeroIndex((prev) => (prev + 1) % heroImages.length);
+    }, 4500);
+
+    return () => clearInterval(timer);
+  }, []);
+
   useEffect(() => {
     if (activeImage === null) return;
     const onKeyDown = (event: KeyboardEvent) => {
@@ -187,7 +188,7 @@ function HomePage() {
 
     return () => window.clearTimeout(timer);
   }, []);
-  
+
   return (
     <div className="bg-background pb-16 text-foreground md:pb-0">
       <header className="fixed inset-x-0 top-0 z-40 border-b border-border/70 bg-background/95 backdrop-blur-md">
@@ -227,32 +228,22 @@ function HomePage() {
 
       <main>
         <section id="home" className="relative isolate min-h-[760px] overflow-hidden pt-20 sm:min-h-[820px]">
-          <Carousel
-            className="absolute inset-0 -z-20 h-full w-full"
-            plugins={[
-              Autoplay({
-                delay: 4500,
-              }),
-            ]}
-            opts={{
-              loop: true,
-              watchDrag: false,
-            }}
-          >
-            <CarouselContent className="h-full ml-0">
-              {heroImages.map((imagePath, index) => (
-                <CarouselItem key={index} className="h-full pl-0">
-                  <img
-                    src={imagePath}
-                    alt={`Achievers Homes View ${index + 1}`}
-                    className="h-full w-full object-cover"
-                    fetchPriority={index === 0 ? "high" : "auto"}
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-          <div className="absolute inset-0 -z-10 bg-primary/80" />
+          {/* Smooth Crossfade Slideshow */}
+          <div className="absolute inset-0 -z-20 h-full w-full bg-primary">
+            {heroImages.map((src, idx) => (
+              <img
+                key={src}
+                src={src}
+                alt={`Achievers Homes View ${idx + 1}`}
+                fetchPriority={idx === 0 ? "high" : "auto"}
+                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
+                  idx === currentHeroIndex ? "opacity-100 scale-105 transition-all duration-[4500ms]" : "opacity-0"
+                }`}
+              />
+            ))}
+          </div>
+
+          <div className="absolute inset-0 -z-10 bg-primary/75" />
           <div className="mx-auto flex min-h-[680px] max-w-7xl items-center px-5 py-20 sm:min-h-[740px] sm:px-8 lg:px-12 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             <div className="max-w-4xl">
               <p className="mb-5 inline-flex items-center gap-2 text-sm font-semibold text-hero-foreground/85">
