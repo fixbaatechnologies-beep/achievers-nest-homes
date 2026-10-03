@@ -101,6 +101,11 @@ const gallery = [
 
 
 
+{
+    src: "/images/Compund Electricity.jpeg",
+    alt: "Spacious accommodation room at Achievers Homes",
+  },
+
   {
     src: "/images/window.jpeg",
     alt: "Window and natural light inside Achievers Homes",
